@@ -13,14 +13,12 @@
   <a href="https://github.com/PP-Namias/Galaxy-Animation/stargazers" target="blank"><img src="https://img.shields.io/github/stars/PP-Namias/Galaxy-Animation?style=flat-square" alt="Galaxy Animation stars"/></a>
   <a href="https://github.com/PP-Namias/Galaxy-Animation/issues" target="blank"><img src="https://img.shields.io/github/issues/PP-Namias/Galaxy-Animation?style=flat-square" alt="Galaxy Animation issues"/></a>
   <a href="https://github.com/PP-Namias/Galaxy-Animation/pulls" target="blank"><img src="https://img.shields.io/github/issues-pr/PP-Namias/Galaxy-Animation?style=flat-square" alt="Galaxy Animation pull-requests"/></a>
-  <p align="center">
-    <b>Galaxy Animation</b> is a website that showcases a mesmerizing animation of a galaxy using only HTML, CSS, and JavaScript. It features a beautiful, star-filled background with moving planets and other celestial objects.
-    <br />
-    <br />
-    <a href="https://github.com/PP-Namias/Galaxy-Animation/issues">Report Bug</a>
-    ·
-    <a href="https://github.com/PP-Namias/Galaxy-Animation/issues">Request Feature</a>
-  </p>
+  <br />
+  <b>Galaxy Animation</b> is a website that showcases a mesmerizing animation of a galaxy using only HTML, CSS, and JavaScript. It features a beautiful, star-filled background with moving planets and other celestial objects.
+  <br />
+  <a href="https://github.com/PP-Namias/Galaxy-Animation/issues">Report Bug</a>
+  ·
+  <a href="https://github.com/PP-Namias/Galaxy-Animation/issues">Request Feature</a>
 </p>
 
 <!-- ABOUT THE PROJECT -->
@@ -29,10 +27,10 @@
 [![Readme Card](https://github-readme-stats.vercel.app/api/pin/?username=PP-Namias&repo=Galaxy-Animation&theme=tokyonight&show_owner=true&hide_border=true)](https://github.com/PP-Namias/Galaxy-Animation)
 
 ## <img src="https://cdn.discordapp.com/emojis/852881450667081728.gif" width="20px" height="20px"> 》Feature
-- [x] Mesmerizing animation of a galaxy made with HTML, CSS, and JavaScript.
-- [x] Customizable animation speed and direction.
-- [x] Multiple celestial objects, including planets, stars, and asteroids.
-- [x] Detailed information about each object in the galaxy, including size, distance, and composition.
+- [ ] Mesmerizing animation of a galaxy made with HTML, CSS, and JavaScript.
+- [ ] Customizable animation speed and direction.
+- [ ] Multiple celestial objects, including planets, stars, and asteroids.
+- [ ] Detailed information about each object in the galaxy, including size, distance, and composition.
 
 ## <img src="https://cdn.discordapp.com/emojis/1028680849195020308.png" width="25px" height="25px"> 》Screenshots
 <br />
