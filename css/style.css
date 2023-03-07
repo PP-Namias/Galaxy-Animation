@@ -21,7 +21,7 @@ label{
 }
 
 :root{
-    background-image: url(../img/starsBackGround.webp);
+    background-image: url(../img/bg.jpg);
     background-size: cover;
     transform-style: flat;
 }
