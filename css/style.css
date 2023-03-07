@@ -1,39 +1,39 @@
-*,*::after,*::before {
+*,*::after,*::before{
     box-sizing: border-box; margin: 0; padding: 0;
     transform-style: preserve-3d;
     /* font-family: 'Oxygen', sans-serif; */
 }
-::selection {
+::selection{
     background: rgb(207, 207, 207);
     color: rgb(15, 15, 15);
 }
 
-a {
+a{
     color: inherit;
 }
 
-html {
+html{
     scroll-behavior: smooth;
 }
 
-label {
+label{
     cursor: pointer;
 }
 
-:root {
-    background-image: url(assets/bg.jpg);
+:root{
+    background-image: url(../img/starsBackGround.webp);
     background-size: cover;
     transform-style: flat;
 }
 
-input {
+input{
     visibility: hidden;
     position: absolute;
     transform: translateZ(10px);
 }
 
 
-main {
+main{
     width: 100%;
     height: 100vh;
     display: flex;
@@ -42,18 +42,17 @@ main {
     /* overflow-y:hidden; */
 }
 
-.flex  {
+.flexdiv{
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.fullscreen {
-    width: 100%;
-    height: 100vh;
+.fullscreen{
+    width: 100%;height: 100vh;
 }
 
-.welcom_page {
+.welcompage{
     position: absolute;
     top: 0;left: 0;
     opacity: 0;
@@ -64,30 +63,30 @@ main {
     font-family: 'Oxygen', sans-serif;
 }
 
-.start {
+.start{
     flex-direction: column;
     opacity: 0;
     transition: 000.4s;
     position: absolute;
     top: 0;left: 0;
 }
-#first_view:checked~main>.welcom_page .start,
-#first_view:checked~main>.welcom_page
- {
+#first_view:checked~main>.welcompage .start,
+#first_view:checked~main>.welcompage
+{
     opacity: 1;
     visibility: visible;
 }
 
-#first_view:checked~main {
+#first_view:checked~main{
     overflow-y: hidden;
 }
 
 
-.start>p:nth-child(1) {
+.start>p:nth-child(1){
     font-size: 70px;
     animation: stage1Welcome 4s 1 forwards ;
 }
-.start>p:nth-child(2) {
+.start>p:nth-child(2){
     position: absolute;
     top: 50%;left: 50%;
     transform: translate(-50%,50px);
@@ -96,7 +95,7 @@ main {
     opacity: 0;
 }
 
-.start>label {
+.start>label{
     position: absolute;
     width: 80px;
     height: 80px;
@@ -110,19 +109,19 @@ main {
     /* border: red solid thick; */
 }
 
-.start>label:hover {
+.start>label:hover{
     background: rgb(216, 216, 216);
     color: rgb(23, 35, 44);
 }
 
-.start>label:active {
+.start>label:active{
     background: rgba(0, 0, 0, 0);
     color: rgb(216, 216, 216);
     border: 1px white solid;
 }
 
 
-.start>label::after {
+.start>label::after{
     content: '';
     width: 120%;height: 120%;
     border-radius: 50px;
@@ -135,7 +134,7 @@ main {
     position: absolute;
 }
 
-.loading {
+.loading{
     flex-direction: column;
     opacity: 0;
     visibility: hidden;
@@ -144,29 +143,29 @@ main {
     top: 0;left: 0;
 }
 
-#loading:checked~main .loading {
+#loading:checked~main .loading{
     animation: loadingfadeIn 1s ease-in-out forwards;
 }
 
-#loading:checked~main .welcom_page {
+#loading:checked~main .welcompage{
     opacity: 1;visibility: visible;
     animation: welcomefadeOut 1s forwards 10s;
 }
 
-.spinner {
+.spinner{
     width: 35%;height: 50%;
     background: rgba(0, 0, 0, 0.308);
     border-radius: 8px;
 }
 
-.spinner>p {
+.spinner>p{
     position: absolute;
     top: 10%;left: 50%;
     transform: translate(-50%, -15px);
     font-size: 30px;
 }
 
-.backCircle {
+.backCircle{
     width: 200px;height: 200px;
     border-radius: 50%;
     background: rgba(0, 0, 0, 0.247);
@@ -176,20 +175,20 @@ main {
 
 
 
-#loading:checked~main .backCircle {
+#loading:checked~main .backCircle{
     animation: spin 2s 4 cubic-bezier(.84,.13,.07,.83) 1s;
 }
-#loading:checked~main .greenBalls {
+#loading:checked~main .greenBalls{
     animation: ballgrow 8s  linear forwards 1s;
 }
-.greenBalls {
+.greenBalls{
     width: 10px;height: 10px;
     border-radius: 50%;
     background: rgb(50, 161, 205);
     /* border: red solid 1px; */
 }
 
-.frontCircle {
+.frontCircle{
     position: absolute;
     top: 50%;left: 50%;
     transform:translate(-50%,-50%);
@@ -198,7 +197,7 @@ main {
     border-radius: 50%;
 }
 
-.name {
+.name{
     font-size: 25px;
     font-family: 'Montserrat', sans-serif;
 }
@@ -209,7 +208,7 @@ main {
 
 
 
-.SolarSystemContainer {
+.SolarSystemContainer{
     width: 100%;
     height: 100vh;
     /* border: rgb(255, 255, 255) solid thin; */
@@ -220,11 +219,11 @@ main {
     z-index: 0;
 }
 
-#loading:checked~main .SolarSystemContainer {
+#loading:checked~main .SolarSystemContainer{
     animation: solarFadein 5s 10s;
 }
 
-.tutorial {
+.tutorial{
     border: solid rgba(255, 255, 255, 0.192) 3px;
     border-radius: 5px;
     width: 30%;height: 80vh;
@@ -244,39 +243,39 @@ main {
 
 }
 
-.tutorial>label {
+.tutorial>label{
     border: solid white 2px;
     padding: 10px;
     border-radius: 20px;
     transition: 0.4s;
 }
 
-.tutorial>label:hover {
+.tutorial>label:hover{
     border: solid rgba(255, 255, 255, 0) 2px;
     background: whitesmoke;
     color: rgb(6, 6, 27);
 }
 
-#loading:checked~main .tutorial {
+#loading:checked~main .tutorial{
     visibility: visible;
     opacity: 1;
 }
-#loading:checked~main .zenmode {
+#loading:checked~main .zenmode{
     visibility: hidden;
     opacity: 0;
 }
 
-.tutorial h2 {
+.tutorial h2{
     font-size: 35px;
     text-align: center;
 
 }
 
-.tutorial :is(h2,p,h1,span) {
+.tutorial :is(h2,p,h1,span){
     cursor: default;
 }
 
-.zenmode {
+.zenmode{
     position: absolute;
     top: 1.5vh;
     right: calc(3vw + 300px);
@@ -291,35 +290,35 @@ main {
     transition: 0.4s;
 }
 
-.zenmode:hover {
+.zenmode:hover{
     background: white;
     color: black;
 
 }
 
-#zen:checked~main .zenmode {
+#zen:checked~main .zenmode{
     background: white;
     color: black;
     right: 2vh;
     opacity: 0.3;
 }
 
-#zen:checked~main .afterLoad {
+#zen:checked~main .afterLoad{
     right: -100%;
 }
 
 
-#zen:checked~main .SS {
+#zen:checked~main .SS{
     top: 10%; left:50%;
     transform: translate(-50%,-50%) translateZ(-1500px) rotateX(60deg);
 
 }
 
-#zen:checked~main .planet>figure {
+#zen:checked~main .planet>figure{
     transform: translate(-50%,-50%) rotateZ(0deg) rotateX(-65deg);
 }
 
-nav {
+nav{
     position: absolute;
     top: 1.5vh;
     right: 2vw;
@@ -337,25 +336,25 @@ nav {
     justify-content: center;
 }
 
-::-webkit-scrollbar {
+::-webkit-scrollbar{
     display: none;
 }
 
-#loading:checked~main .afterLoad {
+#loading:checked~main .afterLoad{
     opacity: 0;
     visibility: hidden;
 }
 
-nav>ul {
+nav>ul{
     width: 90%;
     overflow-x: scroll;
 
 }
-nav>ul>li:nth-last-child(1) {
+nav>ul>li:nth-last-child(1){
     margin-bottom: 15px;
 }
 
-nav>ul>li {
+nav>ul>li{
     width: 100%;
     height: 70px;
     border-radius: 13px;
@@ -367,11 +366,11 @@ nav>ul>li {
     opacity: 0.9;
 }
 
-nav>ul>li:hover {
+nav>ul>li:hover{
     transform: scale(0.95);
 }
 
-nav>ul>li>label {
+nav>ul>li>label{
     width: 100%;
     height: 100%;
     display: flex;
@@ -383,11 +382,11 @@ nav>ul>li>label {
     position: relative;
 }
 
-nav>ul>li>label>h3 {
+nav>ul>li>label>h3{
     transform: translate(10px);
 }
 
-nav>ul>li>label>figure {
+nav>ul>li>label>figure{
     position: absolute;
     left: 100%;
     top: 50%;
@@ -397,33 +396,33 @@ nav>ul>li>label>figure {
     z-index: -1;
 }
 
-nav figure>img {
+nav figure>img{
     height: 120%;
 }
 
-nav li:nth-child(1) {background: rgb(255,85,0);
+nav li:nth-child(1){background: rgb(255,85,0);
     background: linear-gradient(53deg, rgba(255,85,0,1) 0%, rgba(255,218,0,1) 100%);}
-nav li:nth-child(2) {background: rgb(0,61,255);
+nav li:nth-child(2){background: rgb(0,61,255);
     background: linear-gradient(53deg, rgba(0,61,255,1) 0%, rgba(193,122,255,1) 100%);}
-nav li:nth-child(3) {background: rgb(168,73,0);
+nav li:nth-child(3){background: rgb(168,73,0);
     background: linear-gradient(53deg, rgba(168,73,0,1) 0%, rgba(255,226,0,1) 100%);}
-nav li:nth-child(4) {background: rgb(0,150,255);
+nav li:nth-child(4){background: rgb(0,150,255);
     background: linear-gradient(53deg, rgba(0,150,255,1) 0%, rgba(224,255,239,1) 100%);}
-nav li:nth-child(5) {background: rgb(99,99,99);
+nav li:nth-child(5){background: rgb(99,99,99);
     background: linear-gradient(53deg, rgba(99,99,99,1) 0%, rgba(255,255,255,1) 100%);}
-nav li:nth-child(6) {background: rgb(133,33,0);
+nav li:nth-child(6){background: rgb(133,33,0);
     background: linear-gradient(53deg, rgba(133,33,0,1) 0%, rgba(255,102,0,1) 100%);}
-nav li:nth-child(7) {background: rgb(173,67,0);
+nav li:nth-child(7){background: rgb(173,67,0);
     background: linear-gradient(53deg, rgba(173,67,0,1) 0%, rgba(255,230,140,1) 100%);}
-nav li:nth-child(8) {background: rgb(194,143,0);
+nav li:nth-child(8){background: rgb(194,143,0);
     background: linear-gradient(53deg, rgba(194,143,0,1) 0%, rgba(255,252,142,1) 100%);}
-nav li:nth-child(9) {background: rgb(0,172,255);
+nav li:nth-child(9){background: rgb(0,172,255);
     background: linear-gradient(53deg, rgba(0,172,255,1) 0%, rgba(255,255,255,1) 100%);}
-nav li:nth-child(10) {background: rgb(22,0,113);
+nav li:nth-child(10){background: rgb(22,0,113);
     background: linear-gradient(53deg, rgba(22,0,113,1) 0%, rgba(0,74,255,1) 100%);}
-nav li:nth-child(11) {background: black;}
+nav li:nth-child(11){background: black;}
 
-.infoDisplay {
+.infoDisplay{
     position: absolute;
     width: 100%;
     height: 100vh;
@@ -432,7 +431,7 @@ nav li:nth-child(11) {background: black;}
     wdwhdouihdw;
 }
 
-.PlanetCard {
+.PlanetCard{
     color: rgb(224, 224, 224);
     position: absolute;
     width: 100%;
@@ -443,7 +442,7 @@ nav li:nth-child(11) {background: black;}
     font-family: 'Montserrat', sans-serif;
     transform: translateZ(0px);
 }
-.PlanetCard>label {
+.PlanetCard>label{
     border: solid rgba(255, 0, 0, 0) 1px;
     width: 42px;height: 42px;
     position: absolute;
@@ -455,17 +454,17 @@ nav li:nth-child(11) {background: black;}
     justify-content: center;
     align-items: center;
 }
-.PlanetCard>label:hover {
+.PlanetCard>label:hover{
     border: solid white 1px;
 }
-.PlanetCard>div:nth-child(1) {
+.PlanetCard>div:nth-child(1){
     transform: translate(0,-70px);
 }
-.PlanetCard>div>h2 {
+.PlanetCard>div>h2{
     font-size: 60px;
     cursor: default;
 }
-.PlanetCard>div>p {
+.PlanetCard>div>p{
     font-size: 20px;
     width: 500px;
     margin-top: 20px;
@@ -473,7 +472,7 @@ nav li:nth-child(11) {background: black;}
     cursor: default;
 }
 
-.card11>div>div {
+.card11>div>div{
     font-size: 20px;
     width: 500px;
     height: 30vh;
@@ -485,7 +484,7 @@ nav li:nth-child(11) {background: black;}
     justify-content: space-evenly;
     transform: translate(0,50px);
 }
-.links {
+.links{
     display: flex;
     justify-content: space-between;
     transform: translate(0,20px);
@@ -494,97 +493,97 @@ nav li:nth-child(11) {background: black;}
     /* border: red solid 1px; */
 }
 
-.links>div:nth-child(2) {
+.links>div:nth-child(2){
     width: 40%;
     display: flex;justify-content: space-evenly;
 }
 
-.PlanetCard>figure {
+.PlanetCard>figure{
     position: absolute;
     top: 50%;left: 100%;
     transform: translate(-120%,-50%);
     border-radius: 50%;
 }
-.PlanetCard>figure>img {
+.PlanetCard>figure>img{
     height: 65vh;
     animation: bounce 5s infinite;
 }   
 
 
 
-.card1 {
-    background-image: url(assets/mesh1.png);
+.card1{
+    background-image: url(../img/mesh1.png);
     color: rgb(37, 7, 0);
 }
-.card2 {
-    background-image: url(assets/mesh2.png);
+.card2{
+    background-image: url(../img/mesh2.png);
     color: rgb(2, 26, 71);
 }
-.card3 {
-    background-image: url(assets/mesh3.png);
+.card3{
+    background-image: url(../img/mesh3.png);
     color: rgb(255, 255, 255);
 }
-.card4 {
-    background-image: url(assets/mesh4.png);
+.card4{
+    background-image: url(../img/mesh4.png);
     color: rgb(0, 0, 0);
 }
-.card5 {
-    background-image: url(assets/mesh5.png);
+.card5{
+    background-image: url(../img/mesh5.png);
     color: rgb(63, 63, 63);
 }
-.card6 {
-    background-image: url(assets/mesh6.png);
+.card6{
+    background-image: url(../img/mesh6.png);
 }
-.card7 {
-    background-image: url(assets/mesh7.png);
+.card7{
+    background-image: url(../img/mesh7.png);
 }
-.card8 {
-    background-image: url(assets/mesh8.png);
+.card8{
+    background-image: url(../img/mesh8.png);
     color: rgb(73, 62, 0);
 }
-.card9 {
-    background-image: url(assets/mesh9.png);
+.card9{
+    background-image: url(../img/mesh9.png);
     color: rgb(0, 78, 92);
 }
-.card10 {
-    background-image: url(assets/mesh10.png);
+.card10{
+    background-image: url(../img/mesh10.png);
 }
-.card11 {
+.card11{
     background: #000;
 }
 
-#sun_card:checked~main .card1 {
+#sunC:checked~main .card1{
     transform: translateZ(10px);
 }
-#mercury_card:checked~main .card2 {
+#mercuryC:checked~main .card2{
     transform: translateZ(10px);
 }
-#venus_card:checked~main .card3 {
+#venusC:checked~main .card3{
     transform: translateZ(10px);
 }
-#earth_card:checked~main .card4 {
+#earthC:checked~main .card4{
     transform: translateZ(10px);
 }
-#moon_card:checked~main .card5 {
+#moonC:checked~main .card5{
     transform: translateZ(10px);
 }
-#mars_card:checked~main .card6 {
+#marsC:checked~main .card6{
     transform: translateZ(10px);
 }
-#jupiter_card:checked~main .card7 {
+#jupiterC:checked~main .card7{
     transform: translateZ(10px);
 }
-#saturn_card:checked~main .card8 {
+#saturnC:checked~main .card8{
     transform: translateZ(10px);
 }
-#uranus_card:checked~main .card9 {
+#uranusC:checked~main .card9{
     transform: translateZ(10px);
 }
-#neptune_card:checked~main .card10 {
+#neptunC:checked~main .card10{
     transform: translateZ(10px);
 }
 
-.navarr {
+.navarr{
     width: 50%;
     height: 10px;
     position: absolute;
@@ -597,7 +596,7 @@ nav li:nth-child(11) {background: black;}
     font-size: 20px;
 }
 
-#plinfo {
+#plinfo{
     color: white;
     position: absolute;
     bottom: 4.5vh;
@@ -610,12 +609,12 @@ nav li:nth-child(11) {background: black;}
     transition: 1s;
 }
 
-#loading:checked~main #plinfo {
+#loading:checked~main #plinfo{
     opacity: 0;
     visibility: hidden;
 }
 
-#zen:checked~main #plinfo {
+#zen:checked~main #plinfo{
     opacity: 0;
     visibility: hidden;
 }
@@ -632,24 +631,7 @@ nav li:nth-child(11) {background: black;}
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/*
-Solar System
-*/
-.SS {
+.SS{
     width: 3000px;
     height: 3000px;
     /* border: red solid thin; */
@@ -662,7 +644,7 @@ Solar System
     transition: 1s;
 }
 
-.planet {
+.planet{
     position: absolute;
     border-radius: 50%;
     border: solid rgba(255, 255, 255, 0.13) 2px;
@@ -670,7 +652,7 @@ Solar System
     transform:translate(-50%,-50%) rotateY(+15deg) rotateZ(0deg);
 }
 
-.planet>figure {
+.planet>figure{
     /* border: solid rgb(255, 0, 0); */
     border-radius: 50%;
     transform: translate(-50%,-50%) rotateZ(0deg) rotateX(-50deg);
@@ -682,7 +664,7 @@ Solar System
     transition: 1s;
 }
 
-.planet>figure::after {
+.planet>figure::after{
     content: '';
     position: absolute;
     top: 50%;left: 50%;
@@ -692,7 +674,7 @@ Solar System
     /* z-index: inherit; */
 }
 
-.shadow {
+.shadow{
     width: 100%; height: 100%;
     border-radius: 50%;
     position: absolute;
@@ -703,7 +685,7 @@ Solar System
     /* background: rgb(179, 89, 89); */
 }
 
-.shadow>div {
+.shadow>div{
     width: 95%; height: 95%;
     border-radius: 50%;
     display: flex;
@@ -717,7 +699,7 @@ Solar System
     /* background: rgb(179, 89, 89); */
 }
 
-.shadow>div>div {
+.shadow>div>div{
     width: 100%;height: 100%;
     border-radius: 50%;
     background: rgba(0, 0, 0, 0.781);
@@ -725,7 +707,7 @@ Solar System
     transform: scaleY(1);
 }
 
-.sun {
+.sun{
     /* border: red solid thin; */
     width: 100%;
     height: 100%;
@@ -734,7 +716,7 @@ Solar System
     /* border: solid rgba(255, 255, 255, 0.329) 10px; */
 }
 
-.sun>figure {
+.sun>figure{
     /* border: solid rgb(255, 0, 0); */
     width: 180 ;height: 180 ;
     border-radius: 50%;
@@ -745,7 +727,7 @@ Solar System
     animation: sunRotation 150s linear infinite;
 }
 
-.sun>figure>label {
+.sun>figure>label{
     opacity: 0;
     visibility: hidden;
     width: 100%;
@@ -757,41 +739,41 @@ Solar System
     transform: translateZ(2px);
 }
 
-#loading:checked~main .sun>figure>label {
+#loading:checked~main .sun>figure>label{
     opacity: 1;
     visibility: visible;
 }
 
 
-.sun>figure::after {
+.sun>figure::after{
     box-shadow: 0px 0px 100px rgb(255, 161, 53);
     animation: glow 5s linear infinite;
 }
-.sun>figure>img {
+.sun>figure>img{
     width: 180px;
 }
 
 /*----Mercury-----*/
 
-.mercury {
+.mercury{
     width: 18%;
     height: 18%;
     animation: orbitRotation linear 5s infinite;
 }
-.mercury>figure {
+.mercury>figure{
     width: 50px;height: 50px;
     animation: planetRotation linear 5s infinite;
 }
-.mercury>figure::after {
+.mercury>figure::after{
     box-shadow: 0px 0px 10px rgba(98, 192, 255, 0.473);
 }
-.mercury>figure>.shadow>div {
+.mercury>figure>.shadow>div{
     animation: shadowRotation 5s cubic-bezier(1,.07,0,.92) infinite;
 }
-.mercury>figure>.shadow>div>div {
+.mercury>figure>.shadow>div>div{
     animation: shadowScale 5s cubic-bezier(1,.07,0,.92) infinite;
 }
-.mercury>figure>img {
+.mercury>figure>img{
     width: 50px;
 }
 
@@ -800,25 +782,25 @@ Solar System
 
 /*----venus-----*/
 
-.venus {
+.venus{
     width: 23%;
     height: 23%;
     animation: orbitRotation linear 10s infinite;
 }
-.venus>figure {
+.venus>figure{
     width: 60px;height: 60px;
     animation: planetRotation linear 10s infinite;
 }
-.venus>figure::after {
+.venus>figure::after{
     box-shadow: 0px 0px 10px rgba(224, 172, 0, 0.473);
 }
-.venus>figure>.shadow>div {
+.venus>figure>.shadow>div{
     animation: shadowRotation 10s cubic-bezier(1,.07,0,.92) infinite;
 }
-.venus>figure>.shadow>div>div {
+.venus>figure>.shadow>div>div{
     animation: shadowScale 10s cubic-bezier(1,.07,0,.92) infinite;
 }
-.venus>figure>img {
+.venus>figure>img{
     width: 60px;
 }
 
@@ -827,30 +809,30 @@ Solar System
 
 /*----earth-----*/
 
-.earth {
+.earth{
     width: 30%;
     height: 30%;
     animation: orbitRotation linear 20s infinite;
 }
-.earth>figure {
+.earth>figure{
     width: 60px;height: 60px;
     animation: planetRotation linear 20s infinite;
 }
-.earth>figure::after {
+.earth>figure::after{
     box-shadow: 0px 0px 10px rgba(0, 174, 255, 0.473);
 }
-.earth>figure>.shadow>div {
+.earth>figure>.shadow>div{
     animation: shadowRotation 20s cubic-bezier(1,.07,0,.92) infinite;
 }
-.earth>figure>.shadow>div>div {
+.earth>figure>.shadow>div>div{
     animation: shadowScale 20s cubic-bezier(1,.07,0,.92) infinite;
 }
-.earth>figure>img {
+.earth>figure>img{
     width: 60px;
 }
 
 /*----moon-----*/
-.moon {
+.moon{
     position: absolute;
     border-radius: 50%;
     border: solid rgba(255, 255, 255, 0.329) 2px;
@@ -861,7 +843,7 @@ Solar System
     animation: moonOrbitRotation linear 3s infinite;
 }
 
-.moon>img {
+.moon>img{
      /* border: solid rgb(255, 0, 0); */
      border-radius: 50%;
      transform: translate(-50%,-50%) rotateZ(0deg) rotateX(90deg);
@@ -874,7 +856,7 @@ Solar System
      animation: moonRotation linear 3s infinite;
 }
 
-.moon>img {
+.moon>img{
     box-shadow: white 0px 0px 100px;
 }
 
@@ -886,28 +868,28 @@ Solar System
 
 /*----mars-----*/
 
-.mars {
+.mars{
     width: 38%;
     height: 38%;
     animation: orbitRotation linear 40s infinite;
 }
 
-.mars>figure {
+.mars>figure{
     width: 60px;height: 60px;
     animation: planetRotation linear 40s infinite;
 }
 
-.mars>figure::after {
+.mars>figure::after{
     box-shadow: 0px 0px 10px rgba(255, 94, 0, 0.473);
 }
 
-.mars>figure>.shadow>div {
+.mars>figure>.shadow>div{
     animation: shadowRotation 40s cubic-bezier(1,.07,0,.92) infinite;
 }
-.mars>figure>.shadow>div>div {
+.mars>figure>.shadow>div>div{
     animation: shadowScale 40s cubic-bezier(1,.07,0,.92) infinite;
 }
-.mars>figure>img {
+.mars>figure>img{
     width: 60px;
 }
 
@@ -918,7 +900,7 @@ Solar System
 
 /*----belt-----*/
 
-.belt {
+.belt{
     width: 50%;
     height: 50%;
     animation: orbitRotation linear 100s infinite;
@@ -935,28 +917,28 @@ Solar System
 
 /*----jupiter-----*/
 
-.jupiter {
+.jupiter{
     width: 60%;
     height: 60%;
     animation: orbitRotation linear 240s infinite;
 }
 
-.jupiter>figure {
+.jupiter>figure{
     width: 120px;height: 120px;
     animation: planetRotation linear 240s infinite;
 }
 
-.jupiter>figure::after {
+.jupiter>figure::after{
     box-shadow: 0px 0px 10px rgba(255, 170, 121, 0.281);
 }
 
-.jupiter>figure>.shadow>div {
+.jupiter>figure>.shadow>div{
     animation: shadowRotation 240s cubic-bezier(1,.07,0,.92) infinite;
 }
-.jupiter>figure>.shadow>div>div {
+.jupiter>figure>.shadow>div>div{
     animation: shadowScale 240s cubic-bezier(1,.07,0,.92) infinite;
 }
-.jupiter>figure>img {
+.jupiter>figure>img{
     width: 120px;
 }
 
@@ -966,32 +948,32 @@ Solar System
 
 /*----saturn-----*/
 
-.saturn {
+.saturn{
     width: 70%;
     height: 70%;
     animation: orbitRotation linear 540s infinite;
 }
 
-.saturn>figure {
+.saturn>figure{
     width: 110px;height: 110px;
     animation: planetRotation linear 540s infinite;
 }
 
-.saturn>figure::after {
+.saturn>figure::after{
     box-shadow: 0px 0px 10px rgba(255, 170, 121, 0.281);
 }
 
-.saturn>figure>.shadow>div {
+.saturn>figure>.shadow>div{
     animation: shadowRotation 540s cubic-bezier(1,.07,0,.92) infinite;
 }
-.saturn>figure>.shadow>div>div {
+.saturn>figure>.shadow>div>div{
     animation: shadowScale 540s cubic-bezier(1,.07,0,.92) infinite;
 }
 
-.saturn>figure>img:nth-child(1) {
+.saturn>figure>img:nth-child(1){
     width: 110px;
 }
-.saturn>figure>img:nth-child(3) {
+.saturn>figure>img:nth-child(3){
     position: absolute;
     top: 50%;
     bottom: 50%;
@@ -1006,28 +988,28 @@ Solar System
 
 /*----uranus-----*/
 
-.uranus {
+.uranus{
     width: 80%;
     height: 80%;
     animation: orbitRotation linear 1620s infinite;
 }
 
-.uranus>figure {
+.uranus>figure{
     width: 95px;height: 95px;
     animation: planetRotation linear 1620s infinite;
 }
 
-.uranus>figure::after {
+.uranus>figure::after{
     box-shadow: 0px 0px 10px rgba(255, 170, 121, 0.281);
 }
 
-.uranus>figure>.shadow>div {
+.uranus>figure>.shadow>div{
     animation: shadowRotation 1620s cubic-bezier(1,.07,0,.92) infinite;
 }
-.uranus>figure>.shadow>div>div {
+.uranus>figure>.shadow>div>div{
     animation: shadowScale 1620s cubic-bezier(1,.07,0,.92) infinite;
 }
-.uranus>figure>img {
+.uranus>figure>img{
     width: 95px;
 }
 
@@ -1037,28 +1019,28 @@ Solar System
 
 /*----neptun-----*/
 
-.neptun {
+.neptun{
     width: 90%;
     height: 90%;
     animation: orbitRotation linear 3240s infinite;
 }
 
-.neptun>figure {
+.neptun>figure{
     width: 95px;height: 95px;
     animation: planetRotation linear 3240s infinite;
 }
 
-.neptun>figure::after {
+.neptun>figure::after{
     box-shadow: 0px 0px 10px rgba(255, 170, 121, 0.281);
 }
 
-.neptun>figure>.shadow>div {
+.neptun>figure>.shadow>div{
     animation: shadowRotation 3240s cubic-bezier(1,.07,0,.92) infinite;
 }
-.neptun>figure>.shadow>div>div {
+.neptun>figure>.shadow>div>div{
     animation: shadowScale 3240s cubic-bezier(1,.07,0,.92) infinite;
 }
-.neptun>figure>img {
+.neptun>figure>img{
     width: 95px;
 }
 
@@ -1070,108 +1052,115 @@ Solar System
 
 
 
-/*
-Animation Keyframes
-*/
 
-@keyframes shadowRotation  {
-    to {transform: translate(0%,10%) rotate(360deg);}
+
+
+
+
+
+
+
+
+
+
+@keyframes shadowRotation {
+    to{transform: translate(0%,10%) rotate(360deg);}
 }
-@keyframes shadowScale  {
-    0% {transform:scaleY(1);}
-    30% {transform:scaleY(3);}
-    70% {transform:scaleY(3);}
-    100% {transform:scaleY(1);}
+@keyframes shadowScale {
+    0%{transform:scaleY(1);}
+    30%{transform:scaleY(3);}
+    70%{transform:scaleY(3);}
+    100%{transform:scaleY(1);}
 }
 
-@keyframes orbitRotation  {
-    to {
+@keyframes orbitRotation {
+    to{
         transform: translate(-50%,-50%) rotateY(+15deg) rotateZ(-360deg);
     }
 }
-@keyframes planetRotation  {
-    to {
+@keyframes planetRotation {
+    to{
         transform: translate(-50%,-50%) rotateZ(360deg) rotateX(-45deg);
     }
 }
-@keyframes sunRotation  {
-    to {
+@keyframes sunRotation {
+    to{
         transform: translate(-50%,-50%) rotateX(-45deg) rotateZ(-360deg);
     }
 }
-@keyframes glow  {
-    0% {
+@keyframes glow {
+    0%{
         box-shadow: 0px 0px 100px rgb(255, 161, 53);
     }
-    50% {
+    50%{
         box-shadow: 0px 0px 200px rgb(255, 161, 53);
     }
-    100% {
+    100%{
         box-shadow: 0px 0px 100px rgb(255, 161, 53);
     }
 }
 
-@keyframes moonOrbitRotation  {
-    to {
+@keyframes moonOrbitRotation {
+    to{
         transform: translate(-50%,-50%) rotateX(70deg) rotateZ(-360deg);
     }
 }
-@keyframes moonRotation  {
-    to {
+@keyframes moonRotation {
+    to{
         transform: translate(-50%,-50%) rotateZ(360deg) rotateX(90deg);
     }
 }
 
 /*--------------------------------------------------------------*/
 
-@keyframes stage1Welcome {
-    0%   {opacity: 0;}
-    10%  {opacity: 0;}    
-    30%  {opacity: 1;}
-    50%  {transform:translate(0px,0px) scale(1);}
-    100% {transform:translate(0px,-50px) scale(0.7);}
+@keyframes stage1Welcome{
+    0%  {opacity: 0;}
+    10% {opacity: 0;}    
+    30% {opacity: 1;}
+    50% {transform:translate(0px,0px) scale(1);}
+    100%{transform:translate(0px,-50px) scale(0.7);}
 }
-@keyframes stage1fadein1 {
-    0%   {opacity: 0;}
-    100% {opacity: 1; transform: translate(-50%,-20px);}
+@keyframes stage1fadein1{
+    0%  {opacity: 0;}
+    100%{opacity: 1; transform: translate(-50%,-20px);}
 }
-@keyframes stage1fadein2 {
-    0%   {opacity: 0;}
-    100% {opacity: 1; transform: translate(-50%,40px)}
+@keyframes stage1fadein2{
+    0%  {opacity: 0;}
+    100%{opacity: 1; transform: translate(-50%,40px)}
 }
-@keyframes playbutton {
-    0%   {opacity: 0;}
-    20%  {opacity: 1;}
-    80%  {opacity: 1;}
-    100% {opacity: 0; width:200px}
+@keyframes playbutton{
+    0%  {opacity: 0;}
+    20% {opacity: 1;}
+    80% {opacity: 1;}
+    100%{opacity: 0; width:200px}
 }
-@keyframes spin {
-    to {
+@keyframes spin{
+    to{
         transform: rotate(540deg);
     }
 }
-@keyframes ballgrow {
-    to {
+@keyframes ballgrow{
+    to{
         transform: scale(2759%);
     }
 }
-@keyframes loadingfadeIn {
-    0%   {opacity: 0;}
-    100%  {opacity: 1; visibility: visible;}
+@keyframes loadingfadeIn{
+    0%  {opacity: 0;}
+    100% {opacity: 1; visibility: visible;}
 }
-@keyframes welcomefadeOut {
-    0%   {opacity: 1; visibility: visible;}
-    50% {transform: translateZ(0px); opacity: 0;visibility: hidden;}
-    100% {transform: translateZ(-100px); opacity: 0;visibility: hidden;}
+@keyframes welcomefadeOut{
+    0%  {opacity: 1; visibility: visible;}
+    50%{transform: translateZ(0px); opacity: 0;visibility: hidden;}
+    100%{transform: translateZ(-100px); opacity: 0;visibility: hidden;}
 }
-@keyframes solarFadein {
-    0%   {opacity: 0;}
-    50%   {opacity: 0;}
-    100%   {opacity: 100;}
+@keyframes solarFadein{
+    0%  {opacity: 0;}
+    50%  {opacity: 0;}
+    100%  {opacity: 100;}
 }
 
-@keyframes bounce {
-    0%       {transform: translate(0px,-15px);}
-    50%      {transform: translate(0px,15px);}
-    100%     {transform: translate(0px,-15px);}
+@keyframes bounce{
+    0%      {transform: translate(0px,-15px);}
+    50%     {transform: translate(0px,15px);}
+    100%    {transform: translate(0px,-15px);}
 }
