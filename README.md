@@ -21,16 +21,14 @@
   <a href="https://github.com/PP-Namias/Galaxy-Animation/issues">Request Feature</a>
 </p>
 
-<!-- ABOUT THE PROJECT -->
-
 ## <img src="https://cdn.discordapp.com/emojis/859424401186095114.png" width="20px" height="20px"> 》Description
 [![Readme Card](https://github-readme-stats.vercel.app/api/pin/?username=PP-Namias&repo=Galaxy-Animation&theme=tokyonight&show_owner=true&hide_border=true)](https://github.com/PP-Namias/Galaxy-Animation)
 
 ## <img src="https://cdn.discordapp.com/emojis/852881450667081728.gif" width="20px" height="20px"> 》Feature
-- [ ] Mesmerizing animation of a galaxy made with HTML, CSS, and JavaScript.
+- [x] Mesmerizing animation of a galaxy made with HTML, CSS, and JavaScript.
 - [ ] Customizable animation speed and direction.
-- [ ] Multiple celestial objects, including planets, stars, and asteroids.
-- [ ] Detailed information about each object in the galaxy, including size, distance, and composition.
+- [x] Multiple celestial objects, including planets, stars, and asteroids.
+- [x] Detailed information about each object in the galaxy, including size, distance, and composition.
 
 ## <img src="https://cdn.discordapp.com/emojis/1028680849195020308.png" width="25px" height="25px"> 》Screenshots
 <br />
