@@ -296,25 +296,25 @@ main{
 
 }
 
-#zen:checked~main .zenmode{
+#fullscreen:checked~main .zenmode{
     background: white;
     color: black;
     right: 2vh;
     opacity: 0.3;
 }
 
-#zen:checked~main .afterLoad{
+#fullscreen:checked~main .afterLoad{
     right: -100%;
 }
 
 
-#zen:checked~main .SS{
+#fullscreen:checked~main .SS{
     top: 10%; left:50%;
     transform: translate(-50%,-50%) translateZ(-1500px) rotateX(60deg);
 
 }
 
-#zen:checked~main .planet>figure{
+#fullscreen:checked~main .planet>figure{
     transform: translate(-50%,-50%) rotateZ(0deg) rotateX(-65deg);
 }
 
@@ -614,7 +614,7 @@ nav li:nth-child(11){background: black;}
     visibility: hidden;
 }
 
-#zen:checked~main #plinfo{
+#fullscreen:checked~main #plinfo{
     opacity: 0;
     visibility: hidden;
 }
