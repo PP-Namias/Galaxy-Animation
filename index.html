@@ -1,436 +1,476 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>PP Namias | Galaxy Animation</title>
-
-    <link rel = "icon" href = "./pp-namias.ico" type = "image/x-icon">
-
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100&family=Oxygen:wght@300&display=swap" rel="stylesheet">
-</head>
-<body>
-    <!-- -----------Controls----------- -->
-    <input type="radio" id="first_view" name="stage" checked >
-    <input type="radio" id="loading" name="stage">
-    <input type="radio" id="mainView" name="stage" >
-    <input type="checkbox" id="fullscreen" name="mode" >
-    <input type="checkbox" id="sound" name="mode" checked> <!--Music not complete yet-->
-
-    <input type="radio" id="sun_card" name="icard" checked>        
-    <input type="radio" id="mercury_card" name="icard">        
-    <input type="radio" id="venus_card" name="icard">        
-    <input type="radio" id="earth_card" name="icard">        
-    <input type="radio" id="moon_card" name="icard">        
-    <input type="radio" id="mars_card" name="icard">        
-    <input type="radio" id="jupiter_card" name="icard">        
-    <input type="radio" id="saturn_card" name="icard">        
-    <input type="radio" id="uranus_card" name="icard">        
-    <input type="radio" id="neptun_card" name="icard">        
-    <input type="radio" id="pp_namias" name="icard">        
-        <main>
-            <div class="welcompage flexdiv fullscreen">
-                <div class="start flexdiv fullscreen">
-                    <p>PP Namias | Galaxy Animation</p>
-                    <p>Press play to Start!!</p>
-                    <label class="flexdiv" for="loading"><i class="bi bi-play-fill"></i></label>
-                </div>
-                <div class="loading flexdiv fullscreen">
-                    <div class="spinner flexdiv">
-                        <div class="backCircle flexdiv">
-                            <div class="greenBalls flexdiv"></div>
-                            <div class="greenBalls flexdiv"></div>
-                        </div>
-                        <div class="frontCircle flexdiv">
-                            <div class="name">A moment...</div>
-                        </div>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>PP Namias | Galaxy Animation</title>
+        <link rel = "icon" href = "./pp-namias.ico" type = "image/x-icon">
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
+        <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+        <link rel="stylesheet" href="./css/style.css" />
+        <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;700&display=swap" rel="stylesheet"/>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100&family=Oxygen:wght@300&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <header class="header">
+            <div class="nav wrapper">
+                <a href="./" class="logo">Galaxy Animation</a>
+                <ul class="social-links">
+                    <li>
+                        <a href="https://github.com/PP-Namias" target="_blank">
+                        <i class="bi bi-github"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.linkedin.com/in/PP-Namias/" target="_blank">
+                        <i class="bi bi-linkedin"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.youtube.com/@PP_Namias/" target="_blank">
+                        <i class="bi bi-youtube"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://twitter.com/PP_Namias/" target="_blank">
+                        <i class="bi bi-twitter"></i>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <main class="hero-section">
+                <section class="wrapper hero-container">
+                    <h1 class="animate__animated animate__fadeInLeft">
+                        Galaxy Animation by <span class="name">PP Namias.</span>
+                    </h1>
+                    <p class="animate__animated animate__fadeInLeft animation_delay">
+                        This Galaxy Animation website was created for Web System & Technologies Activity #5.
+                    </p>
+                    <div class="animate__animated animate__fadeInLeft animation_delay">
+                        <a href="#about-section" class="download-btn"> Website </a>
                     </div>
+                </section>
+            </main>
+        </header>
+        <!-- Galaxy section -->
+        <section class="galaxy-comtainer">
+            <div id="galaxy">
+                <div class="tile">
+                    <img src="./img/galaxy (1).gif" alt="galaxy">
+                </div>
+                <div class="tile">
+                    <img src="./img/galaxy (2).gif" alt="galaxy">
+                </div>
+                <div class="tile">
+                    <img src="./img/galaxy (3).gif" alt="galaxy">
+                </div>
+                <div class="tile">
+                    <img src="./img/galaxy (4).gif" alt="galaxy">
+                </div>
+                <div class="tile">
+                    <img src="./img/galaxy (5).gif" alt="galaxy">
+                </div>
+                <div class="tile">
+                    <img src="./img/galaxy (6).gif" alt="galaxy">
+                </div>
+                <div class="tile">
+                    <img src="./img/galaxy (7).gif" alt="galaxy">
+                </div>
+                <div class="tile">
+                    <img src="./img/galaxy (8).gif" alt="galaxy">
+                </div>
+                <div class="tile">
+                    <img src="./img/galaxy (9).gif" alt="galaxy">
+                </div>
+                <div class="tile">
+                    <img src="./img/Dj Loli.gif" alt="Prank lol">
                 </div>
             </div>
-
-<!---
-            <div class="page1">
-                <div class="galaxyComtainer">
-                    <div class="galaxy">
-                        <img src="./img/galaxy (1).gif" alt="galaxy">
-                    </div>
-                    <div class="galaxy">
-                        <img src="./img/galaxy (2).gif" alt="galaxy">
-                    </div>
-                    <div class="galaxy">
-                        <img src="./img/galaxy (3).gif" alt="galaxy">
-                    </div>
-                    <div class="galaxy">
-                        <img src="./img/galaxy (4).gif" alt="galaxy">
-                    </div>
-                    <div class="galaxy">
-                        <img src="./img/galaxy (5).gif" alt="galaxy">
-                    </div>
-                    <div class="galaxy">
-                        <img src="./img/galaxy (6).gif" alt="galaxy">
-                    </div>
-                    <div class="galaxy">
-                        <img src="./img/galaxy (7).gif" alt="galaxy">
-                    </div>
-                    <div class="galaxy">
-                        <img src="./img/galaxy (8).gif" alt="galaxy">
-                    </div>
-                    <div class="galaxy">
-                        <img src="./img/galaxy (9).gif" alt="galaxy">
-                    </div>
-                    <div class="galaxy">
-                        <img src="./img/Dj Loli.gif" alt="Prank lol">
+        </section>
+        <!-- Solar System section -->
+        <section class="solar-system-sontainer">
+            <!-- -----------Controls----------- -->
+            <input type="radio" id="first_view" name="stage" checked >
+            <input type="radio" id="loading" name="stage">
+            <input type="radio" id="mainView" name="stage" >
+            <input type="checkbox" id="fullscreen" name="mode" >
+            <input type="checkbox" id="sound" name="mode" checked> <!--Music not complete yet-->
+            <input type="radio" id="sun_card" name="icard" checked>        
+            <input type="radio" id="mercury_card" name="icard">        
+            <input type="radio" id="venus_card" name="icard">        
+            <input type="radio" id="earth_card" name="icard">        
+            <input type="radio" id="moon_card" name="icard">        
+            <input type="radio" id="mars_card" name="icard">        
+            <input type="radio" id="jupiter_card" name="icard">        
+            <input type="radio" id="saturn_card" name="icard">        
+            <input type="radio" id="uranus_card" name="icard">        
+            <input type="radio" id="neptun_card" name="icard">        
+            <input type="radio" id="pp_namias" name="icard">        
+            <main>
+                <div class="SolarSystemContainer">
+                    <div class="SS">
+                        <div class="planet sun">
+                            <figure>
+                                <img src="img/sun.png" alt="Sun">
+                            </figure>
+                        </div>
+                        <div class="planet mercury">
+                            <figure>
+                                <img src="img/mercury.png" alt="Mercury">
+                                <div class="shadow">
+                                    <div>
+                                        <div></div>
+                                    </div>
+                                </div>
+                            </figure>
+                        </div>
+                        <div class="planet venus">
+                            <figure>
+                                <img src="img/venus.png" alt="Venus">
+                                <div class="shadow">
+                                    <div>
+                                        <div></div>
+                                    </div>
+                                </div>
+                            </figure>
+                        </div>
+                        <div class="planet earth">
+                            <figure>
+                                <img src="img/earth.png" alt="Earth">
+                                <div class="shadow">
+                                    <div>
+                                        <div></div>
+                                    </div>
+                                </div>
+                                <figure class="moon">
+                                    <img src="img/moon.png" alt="Moon">
+                                </figure>
+                            </figure>
+                        </div>
+                        <div class="planet mars">
+                            <figure>
+                                <img src="img/mars.png" alt="Mars">
+                                <div class="shadow">
+                                    <div>
+                                        <div></div>
+                                    </div>
+                                </div>
+                            </figure>
+                        </div>
+                        <div class="belt">
+                        </div>
+                        <div class="planet jupiter">
+                            <figure>
+                                <img src="img/jupiter.png" alt="Jupiter">
+                                <div class="shadow">
+                                    <div>
+                                        <div></div>
+                                    </div>
+                                </div>
+                            </figure>
+                        </div>
+                        <div class="planet saturn">
+                            <figure>
+                                <img src="img/Saturn_no_ring.png" alt="Saturn">
+                                <div class="shadow">
+                                    <div>
+                                        <div></div>
+                                    </div>
+                                </div>
+                                <img src="img/Saturn_Ring.png" alt="Saturn ring">
+                            </figure>
+                        </div>
+                        <div class="planet uranus">
+                            <figure>
+                                <img src="img/uranus.png" alt="Uranus">
+                                <div class="shadow">
+                                    <div>
+                                        <div></div>
+                                    </div>
+                                </div>
+                                <div class="uranus_ring"></div>
+                            </figure>
+                        </div>
+                        <div class="planet neptun">
+                            <figure>
+                                <img src="img/neptune.png" alt="Neptune">
+                                <div class="shadow">
+                                    <div>
+                                        <div></div>
+                                    </div>
+                                </div>
+                            </figure>
+                        </div>
                     </div>
                 </div>
-            </div>
--->
-
-            <div class="SolarSystemContainer">
-                <div class="SS">
-                    <div class="planet sun">
+                <div class="tutorial flexdiv">
+                    <div>
+                        <h2>Galaxy Animation</h2>
+                        <p>A website that showcases a mesmerizing animation of a galaxy using only HTML, CSS, and JavaScript. It features a beautiful, star-filled background with moving planets and other celestial objects.</p>
+                    </div>
+                    <div>
+                        <h2>Fullscreen</h2>
+                        <p>sit back, relax and enjoy the beauty of our home system, for a better Experience press F11 to fullscreen</p>
+                    </div>
+                    <label for="mainView">Continue <i class="bi bi-arrow-right"></i></label>
+                </div>
+                <label for="fullscreen" class="zenmode flexdiv">Fullscreen</label>
+                <a href="#infosection" id="plinfo">Planet info <i class="bi bi-chevron-double-down"></i></a>
+                <nav class="afterLoad ">
+                    <ul>
+                        <li>
+                            <label for="sun_card">
+                                <h3>SUN</h3>
+                                <figure>
+                                    <img src="img/sun.png" alt="Sun">
+                                </figure>
+                            </label>
+                        </li>
+                        <li>
+                            <label for="mercury_card">
+                                <h3>MERCURY</h3>
+                                <figure>
+                                    <img src="img/mercury.png" alt="Mercury">
+                                </figure>
+                            </label>
+                        </li>
+                        <li>
+                            <label for="venus_card">
+                                <h3>VENUS</h3>
+                                <figure>
+                                    <img src="img/venus.png" alt="Venus">
+                                </figure>
+                            </label>
+                        </li>
+                        <li>
+                            <label for="earth_card">
+                                <h3>EARTH</h3>
+                                <figure>
+                                    <img src="img/earth.png" alt="Earth">
+                                </figure>
+                            </label>
+                        </li>
+                        <li>
+                            <label for="moon_card">
+                                <h3>MOON</h3>
+                                <figure>
+                                    <img src="img/moon.png" alt="Moon">
+                                </figure>
+                            </label>
+                        </li>
+                        <li>
+                            <label for="mars_card">
+                                <h3>MARS</h3>
+                                <figure>
+                                    <img src="img/mars.png" alt="Mars">
+                                </figure>
+                            </label>
+                        </li>
+                        <li>
+                            <label for="jupiter_card">
+                                <h3>JUPITER</h3>
+                                <figure>
+                                    <img src="img/jupiter.png" alt="Jupiter">
+                                </figure>
+                            </label>
+                        </li>
+                        <li>
+                            <label for="saturn_card">
+                                <h3>SATURN</h3>
+                                <figure>
+                                    <img src="img/saturn.png" alt="Saturn">
+                                </figure>
+                            </label>
+                        </li>
+                        <li>
+                            <label for="uranus_card">
+                                <h3>URANUS</h3>
+                                <figure>
+                                    <img src="img/uranus.png" alt="Uranus">
+                                </figure>
+                            </label>
+                        </li>
+                        <li>
+                            <label for="neptun_card">
+                                <h3>NEPTUNE</h3>
+                                <figure>
+                                    <img src="img/neptune.png" alt="Neptune">
+                                </figure>
+                            </label>
+                        </li>
+                        <li>
+                            <label for="pp_namias">
+                                <h3>PP Namias</h3>
+                                <figure>
+                                    <img src="img/pp namias.png" alt="PP Namias">
+                                </figure>
+                            </label>
+                        </li>
+                    </ul>
+                </nav>
+                <div class="infoDisplay Card" id="infosection">
+                    <div class="PlanetCard card1">
+                        <div>
+                            <h2>Sun</h2>
+                            <p>The Sun is the star at the center of the Solar System. It is a nearly perfect ball of hot plasma, heated to incandescence by nuclear fusion reactions in its core, radiating the energy mainly as visible light, ultraviolet, and infrared radiation. It is the most important source of energy for life on Earth.</p>
+                        </div>
+                        <div class="navarr">
+                            <label for="" style="visibility:hidden;"><i class="bi bi-arrow-left"></i></label>
+                            <label for="mercury_card"><i class="bi bi-arrow-right"></i></label>
+                        </div>
                         <figure>
                             <img src="img/sun.png" alt="Sun">
                         </figure>
                     </div>
-                    <div class="planet mercury">
+                    <div class="PlanetCard card2">
+                        <div>
+                            <h2>Mercury</h2>
+                            <p>Mercury the smallest planet in our solar system and closest to the Sun is only slightly larger than Earth's Moon. Mercury is the fastest planet, zipping around the Sun every 88 Earth days.</p>
+                        </div>
+                        <div class="navarr">
+                            <label for="sun_card"><i class="bi bi-arrow-left"></i></label>
+                            <label for="venus_card"><i class="bi bi-arrow-right"></i></label>
+                        </div>
                         <figure>
                             <img src="img/mercury.png" alt="Mercury">
-                            <div class="shadow">
-                                <div><div></div></div>
-                            </div>
                         </figure>
                     </div>
-                    <div class="planet venus">
+                    <div class="PlanetCard card3">
+                        <div>
+                            <h2>Venus</h2>
+                            <p>Venus spins slowly in the opposite direction from most planets. A thick atmosphere traps heat in a runaway greenhouse effect, making it the hottest planet in our solar system.</p>
+                        </div>
+                        <div class="navarr">
+                            <label for="mercury_card"><i class="bi bi-arrow-left"></i></label>
+                            <label for="earth_card"><i class="bi bi-arrow-right"></i></label>
+                        </div>
                         <figure>
                             <img src="img/venus.png" alt="Venus">
-                            <div class="shadow">
-                                <div><div></div></div>
-                            </div>
                         </figure>
                     </div>
-                    <div class="planet earth">
+                    <div class="PlanetCard card4">
+                        <div>
+                            <h2>Earth</h2>
+                            <p>Earth our home planet is the only place we know of so far that’s inhabited by living things. It's also the only planet in our solar system with liquid water on the surface.</p>
+                        </div>
+                        <div class="navarr">
+                            <label for="venus_card"><i class="bi bi-arrow-left"></i></label>
+                            <label for="moon_card"><i class="bi bi-arrow-right"></i></label>
+                        </div>
                         <figure>
                             <img src="img/earth.png" alt="Earth">
-                            <div class="shadow">
-                                <div><div></div></div>
-                            </div>
-                            <figure class="moon">
-                                <img src="img/moon.png" alt="Moon">
-                            </figure>
                         </figure>
                     </div>
-                    <div class="planet mars">
+                    <div class="PlanetCard card5">
+                        <div>
+                            <h2>Moon</h2>
+                            <p>The Moon is Earth's only natural satellite. At about one-quarter the diameter of Earth, it is the fifth largest satellite in the Solar System, the largest satellite in the Solar System relative to its major planet, and larger than any known dwarf planet.</p>
+                        </div>
+                        <div class="navarr">
+                            <label for="earth_card"><i class="bi bi-arrow-left"></i></label>
+                            <label for="mars_card"><i class="bi bi-arrow-right"></i></label>
+                        </div>
+                        <figure>
+                            <img src="img/moon.png" alt="Moon">
+                        </figure>
+                    </div>
+                    <div class="PlanetCard card6">
+                        <div>
+                            <h2>Mars</h2>
+                            <p>Mars is a dusty, cold, desert world with a very thin atmosphere. There is strong evidence Mars was – billions of years ago – wetter and warmer, with a thicker atmosphere.</p>
+                        </div>
+                        <div class="navarr">
+                            <label for="moon_card"><i class="bi bi-arrow-left"></i></label>
+                            <label for="jupiter_card"><i class="bi bi-arrow-right"></i></label>
+                        </div>
                         <figure>
                             <img src="img/mars.png" alt="Mars">
-                            <div class="shadow">
-                                <div><div></div></div>
-                            </div>
                         </figure>
                     </div>
-                    <div class="belt">
-                    </div>
-                    <div class="planet jupiter">
+                    <div class="PlanetCard card7">
+                        <div>
+                            <h2>Jupiter</h2>
+                            <p>Jupiter is more than twice as massive than the other planets of our solar system combined. The giant planet's Great Red spot is a centuries-old storm bigger than Earth.</p>
+                        </div>
+                        <div class="navarr">
+                            <label for="mars_card"><i class="bi bi-arrow-left"></i></label>
+                            <label for="saturn_card"><i class="bi bi-arrow-right"></i></label>
+                        </div>
                         <figure>
                             <img src="img/jupiter.png" alt="Jupiter">
-                            <div class="shadow">
-                                <div><div></div></div>
-                            </div>
                         </figure>
                     </div>
-                    <div class="planet saturn">
+                    <div class="PlanetCard card8">
+                        <div>
+                            <h2>Saturn</h2>
+                            <p>Adorned with a dazzling, complex system of icy rings, Saturn is unique in our solar system. The other giant planets have rings, but none are as spectacular as Saturn's.</p>
+                        </div>
+                        <div class="navarr">
+                            <label for="jupiter_card"><i class="bi bi-arrow-left"></i></label>
+                            <label for="uranus_card"><i class="bi bi-arrow-right"></i></label>
+                        </div>
                         <figure>
-                            <img src="img/Saturn_no_ring.png" alt="Saturn">
-                            <div class="shadow">
-                                <div><div></div></div>
-                            </div>
-                            <img src="img/Saturn_Ring.png" alt="Saturn ring">
+                            <img src="img/saturn.png" alt="Saturn">
                         </figure>
                     </div>
-                    <div class="planet uranus">
+                    <div class="PlanetCard card9">
+                        <div>
+                            <h2>Uranus</h2>
+                            <p>Uranus seventh planet from the Sun rotates at a nearly 90-degree angle from the plane of its orbit. This unique tilt makes Uranus appear to spin on its side.</p>
+                        </div>
+                        <div class="navarr">
+                            <label for="saturn_card"><i class="bi bi-arrow-left"></i></label>
+                            <label for="neptun_card"><i class="bi bi-arrow-right"></i></label>
+                        </div>
                         <figure>
                             <img src="img/uranus.png" alt="Uranus">
-                            <div class="shadow">
-                                <div><div></div></div>
-                            </div>
-                            <div class="uranus_ring"></div>
                         </figure>
                     </div>
-                    <div class="planet neptun">
+                    <div class="PlanetCard card10">
+                        <div>
+                            <h2>Neptune</h2>
+                            <p>Neptune the eighth and most distant major planet orbiting our Sun is dark, cold and whipped by supersonic winds. It was the first planet located through mathematical calculations.</p>
+                        </div>
+                        <div class="navarr">
+                            <label for="uranus_card"><i class="bi bi-arrow-left"></i></label>
+                            <label for="pp_namias" ><i class="bi bi-arrow-right"></i></label>
+                        </div>
                         <figure>
                             <img src="img/neptune.png" alt="Neptune">
-                            <div class="shadow">
-                                <div><div></div></div>
+                        </figure>
+                    </div>
+                    <div class="PlanetCard card11">
+                        <div>
+                            <h2>PP Namias</h2>
+                            <div class="flexdiv">
+                                <p>Made with <i class="bi bi-heart-fill"></i> by <a href="https://github.com/PP_Namias/" target="_blank">PP Namias</a></p>
+                                <div class="links">
+                                    <div>Socials:</div>
+                                    <div>
+                                        <a href="https://www.linkedin.com/in/PP-Namias/" target="_blank"><i class="bi bi-linkedin"></i> </a>
+                                        <a href="https://twitter.com/PP_Namias/" target="_blank"><i class="bi bi-twitter"></i> </a>
+                                        <a href="https://www.youtube.com/@PP_Namias/" target="_blank"><i class="bi bi-youtube"></i> </a>
+                                        <a href="https://github.com/PP-Namias" target="_blank"><i class="bi bi-github"></i> </a>
+                                    </div>
+                                </div>
                             </div>
+                        </div>
+                        <div class="navarr">
+                            <label for="neptun_card"><i class="bi bi-arrow-left"></i></label>
+                            <label for="" style="visibility: hidden;"><i class="bi bi-arrow-right"></i></label>
+                        </div>
+                        <figure>
+                            <img src="img/pp namias.png" alt="">
                         </figure>
                     </div>
                 </div>
-    
-            </div>
-            <div class="tutorial flexdiv">
-                <div>
-                    <h2>Galaxy Animation</h2>
-                    <p>A website that showcases a mesmerizing animation of a galaxy using only HTML, CSS, and JavaScript. It features a beautiful, star-filled background with moving planets and other celestial objects.</p>
-                </div>
-                <div>
-                    <h2>Fullscreen</h2>
-                    <p>sit back, relax and enjoy the beauty of our home system, for a better Experience press F11 to fullscreen</p>
-                </div>
-                <label for="mainView">Continue <i class="bi bi-arrow-right"></i></label>
-            </div>
-            <label for="fullscreen" class="zenmode flexdiv">Fullscreen</label>
-            <a href="#infosection" id="plinfo">Planet info <i class="bi bi-chevron-double-down"></i></a>
-            <nav class="afterLoad ">
-                <ul>
-                    <li>
-                        <label for="sun_card">
-                            <h3>SUN</h3>
-                            <figure>
-                                <img src="img/sun.png" alt="Sun">
-                            </figure>
-                        </label>
-                    </li>
-                    <li>
-                        <label for="mercury_card">
-                            <h3>MERCURY</h3>
-                            <figure>
-                                <img src="img/mercury.png" alt="Mercury">
-                            </figure>
-                        </label>
-                    </li>
-                    <li>
-                        <label for="venus_card">
-                            <h3>VENUS</h3>
-                            <figure>
-                                <img src="img/venus.png" alt="Venus">
-                            </figure>
-                        </label>
-                    </li>
-                    <li>
-                        <label for="earth_card">
-                            <h3>EARTH</h3>
-                            <figure>
-                                <img src="img/earth.png" alt="Earth">
-                            </figure>
-                        </label>
-                    </li>
-                    <li>
-                        <label for="moon_card">
-                            <h3>MOON</h3>
-                            <figure>
-                                <img src="img/moon.png" alt="Moon">
-                            </figure>
-                        </label>
-                    </li>
-                    <li>
-                        <label for="mars_card">
-                            <h3>MARS</h3>
-                            <figure>
-                                <img src="img/mars.png" alt="Mars">
-                            </figure>
-                        </label>
-                    </li>
-                    <li>
-                        <label for="jupiter_card">
-                            <h3>JUPITER</h3>
-                            <figure>
-                                <img src="img/jupiter.png" alt="Jupiter">
-                            </figure>
-                        </label>
-                    </li>
-                    <li>
-                        <label for="saturn_card">
-                            <h3>SATURN</h3>
-                            <figure>
-                                <img src="img/saturn.png" alt="Saturn">
-                            </figure>
-                        </label>
-                    </li>
-                    <li>
-                        <label for="uranus_card">
-                            <h3>URANUS</h3>
-                            <figure>
-                                <img src="img/uranus.png" alt="Uranus">
-                            </figure>
-                        </label>
-                    </li>
-                    <li>
-                        <label for="neptun_card">
-                            <h3>NEPTUNE</h3>
-                            <figure>
-                                <img src="img/neptune.png" alt="Neptune">
-                            </figure>
-                        </label>
-                    </li>
-                    <li>
-                        <label for="pp_namias">
-                            <h3>PP Namias</h3>
-                            <figure>
-                                <img src="img/pp namias.png" alt="PP Namias">
-                            </figure>
-                        </label>
-                    </li>
-                </ul>
-            </nav>
-            <div class="infoDisplay Card" id="infosection">
-                <div class="PlanetCard card1">
-                    
-                    <div>
-                        <h2>Sun</h2>
-                        <p>The Sun is the star at the center of the Solar System. It is a nearly perfect ball of hot plasma, heated to incandescence by nuclear fusion reactions in its core, radiating the energy mainly as visible light, ultraviolet, and infrared radiation. It is the most important source of energy for life on Earth.</p>
-                    </div>
-                    <div class="navarr">
-                        <label for="" style="visibility:hidden;"><i class="bi bi-arrow-left"></i></label>
-                        <label for="mercury_card"><i class="bi bi-arrow-right"></i></label>
-                    </div>
-                    <figure>
-                        <img src="img/sun.png" alt="Sun">
-                    </figure>
-                </div>
-                <div class="PlanetCard card2">
-                    <div>
-                        <h2>Mercury</h2>
-                        <p>Mercury the smallest planet in our solar system and closest to the Sun is only slightly larger than Earth's Moon. Mercury is the fastest planet, zipping around the Sun every 88 Earth days.</p>
-                    </div>
-                    <div class="navarr">
-                        <label for="sun_card"><i class="bi bi-arrow-left"></i></label>
-                        <label for="venus_card"><i class="bi bi-arrow-right"></i></label>
-                    </div>
-                    <figure>
-                        <img src="img/mercury.png" alt="Mercury">
-                    </figure>
-                </div>
-                <div class="PlanetCard card3">
-                    <div>
-                        <h2>Venus</h2>
-                        <p>Venus spins slowly in the opposite direction from most planets. A thick atmosphere traps heat in a runaway greenhouse effect, making it the hottest planet in our solar system.</p>
-                    </div>
-                    <div class="navarr">
-                        <label for="mercury_card"><i class="bi bi-arrow-left"></i></label>
-                        <label for="earth_card"><i class="bi bi-arrow-right"></i></label>
-                    </div>
-                    <figure>
-                        <img src="img/venus.png" alt="Venus">
-                    </figure>
-                </div>
-                <div class="PlanetCard card4">
-                    <div>
-                        <h2>Earth</h2>
-                        <p>Earth our home planet is the only place we know of so far that’s inhabited by living things. It's also the only planet in our solar system with liquid water on the surface.</p>
-                    </div>
-                    <div class="navarr">
-                        <label for="venus_card"><i class="bi bi-arrow-left"></i></label>
-                        <label for="moon_card"><i class="bi bi-arrow-right"></i></label>
-                    </div>
-                    <figure>
-                        <img src="img/earth.png" alt="Earth">
-                    </figure>
-                </div>
-                <div class="PlanetCard card5">
-                    <div>
-                        <h2>Moon</h2>
-                        <p>The Moon is Earth's only natural satellite. At about one-quarter the diameter of Earth, it is the fifth largest satellite in the Solar System, the largest satellite in the Solar System relative to its major planet, and larger than any known dwarf planet.</p>
-                    </div>
-                    <div class="navarr">
-                        <label for="earth_card"><i class="bi bi-arrow-left"></i></label>
-                        <label for="mars_card"><i class="bi bi-arrow-right"></i></label>
-                    </div>
-                    <figure>
-                        <img src="img/moon.png" alt="Moon">
-                    </figure>
-                </div>
-                <div class="PlanetCard card6">
-                    <div>
-                        <h2>Mars</h2>
-                        <p>Mars is a dusty, cold, desert world with a very thin atmosphere. There is strong evidence Mars was – billions of years ago – wetter and warmer, with a thicker atmosphere.</p>
-                    </div>
-                    <div class="navarr">
-                        <label for="moon_card"><i class="bi bi-arrow-left"></i></label>
-                        <label for="jupiter_card"><i class="bi bi-arrow-right"></i></label>
-                    </div>
-                    <figure>
-                        <img src="img/mars.png" alt="Mars">
-                    </figure>
-                </div>
-                <div class="PlanetCard card7">
-                    <div>
-                        <h2>Jupiter</h2>
-                        <p>Jupiter is more than twice as massive than the other planets of our solar system combined. The giant planet's Great Red spot is a centuries-old storm bigger than Earth.</p>
-                    </div>
-                    <div class="navarr">
-                        <label for="mars_card"><i class="bi bi-arrow-left"></i></label>
-                        <label for="saturn_card"><i class="bi bi-arrow-right"></i></label>
-                    </div>
-                    <figure>
-                        <img src="img/jupiter.png" alt="Jupiter">
-                    </figure>
-                </div>
-                <div class="PlanetCard card8">
-                    <div>
-                        <h2>Saturn</h2>
-                        <p>Adorned with a dazzling, complex system of icy rings, Saturn is unique in our solar system. The other giant planets have rings, but none are as spectacular as Saturn's.</p>
-                    </div>
-                    <div class="navarr">
-                        <label for="jupiter_card"><i class="bi bi-arrow-left"></i></label>
-                        <label for="uranus_card"><i class="bi bi-arrow-right"></i></label>
-                    </div>
-                    <figure>
-                        <img src="img/saturn.png" alt="Saturn">
-                    </figure>
-                </div>
-                <div class="PlanetCard card9">
-                    <div>
-                        <h2>Uranus</h2>
-                        <p>Uranus seventh planet from the Sun rotates at a nearly 90-degree angle from the plane of its orbit. This unique tilt makes Uranus appear to spin on its side.</p>
-                    </div>
-                    <div class="navarr">
-                        <label for="saturn_card"><i class="bi bi-arrow-left"></i></label>
-                        <label for="neptun_card"><i class="bi bi-arrow-right"></i></label>
-                    </div>
-                    <figure>
-                        <img src="img/uranus.png" alt="Uranus">
-                    </figure>
-                </div>
-                <div class="PlanetCard card10">
-                    <div>
-                        <h2>Neptune</h2>
-                        <p>Neptune the eighth and most distant major planet orbiting our Sun is dark, cold and whipped by supersonic winds. It was the first planet located through mathematical calculations.</p>
-                    </div>
-                    <div class="navarr">
-                        <label for="uranus_card"><i class="bi bi-arrow-left"></i></label>
-                        <label for="pp_namias" ><i class="bi bi-arrow-right"></i></label>
-                    </div>
-                    <figure>
-                        <img src="img/neptune.png" alt="Neptune">
-                    </figure>
-                </div>
-                <div class="PlanetCard card11">
-                    <div>
-                        <h2>PP Namias</h2>
-                        <div class="flexdiv">
-                            <p>Made with <i class="bi bi-heart-fill"></i> by <a href="https://github.com/PP_Namias/" target="_blank">PP Namias</a></p>
-                            <div class="links">
-                                <div>Socials:</div><div>
-                                <a href="https://www.linkedin.com/in/PP-Namias/" target="_blank"><i class="bi bi-linkedin"></i> </a>
-                                <a href="https://twitter.com/PP_Namias/" target="_blank"><i class="bi bi-twitter"></i> </a>
-                                <a href="https://www.youtube.com/@PP_Namias/" target="_blank"><i class="bi bi-youtube"></i> </a>
-                                <a href="https://github.com/PP-Namias" target="_blank"><i class="bi bi-github"></i> </a>
-                            </div></div>
-                        </div>
-                    </div>
-                    <div class="navarr">
-                        <label for="neptun_card"><i class="bi bi-arrow-left"></i></label>
-                        <label for="" style="visibility: hidden;"><i class="bi bi-arrow-right"></i></label>
-                    </div>
-                    <figure>
-                        <img src="img/pp namias.png" alt="">
-                    </figure>
-                </div>
-            </div>
-        </main>
-</body>
+            </main>
+        </section>
+        <script src="js/script.js"></script>
+    </body>
 </html>
