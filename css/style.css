@@ -1,7 +1,6 @@
 *,*::after,*::before {
     box-sizing: border-box; margin: 0; padding: 0;
     transform-style: preserve-3d;
-    font-family: 'Oxygen', sans-serif;
 }
 ::selection {
     background: rgb(207, 207, 207);
@@ -210,6 +209,119 @@ main {
 
 
 
+
+/*
+.page1 {
+    background-color: rgb(10, 10, 10);
+    height: 140vmax;
+    width: 140vmax;
+    margin: 0px;
+    overflow: hidden;
+}
+
+.galaxyComtainer {
+    height: 140vmax;
+    width: 140vmax;
+    position: absolute;;
+}
+
+.galaxy {
+    border-radius: 1vmax;
+    position: absolute;
+    transition: transform 800ms ease;
+}
+
+.galaxy:hover {
+    transform: scale(1.1);
+}
+
+.galaxy:hover > img {
+    opacity: 1;
+    transform: scale(1.01);
+}
+
+.galaxy > img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: inherit;
+    opacity: 0;
+    transition: opacity 800ms ease, 
+    transform 800ms ease;
+}
+
+.galaxy:nth-child(1) {
+    background-color: purple;
+    height: 23%;
+    width: 23%;
+    left: 7%;
+    top: 7%;
+} 
+
+.galaxy:nth-child(2) {
+    background-color: purple;
+    height: 23%;
+    width: 23%;
+    left: 7%;
+    top: 7%;
+} 
+
+.galaxy:nth-child(3) {
+    background-color: purple;
+    height: 23%;
+    width: 23%;
+    left: 7%;
+    top: 7%;
+} 
+
+.galaxy:nth-child(4) {
+    background-color: purple;
+    height: 23%;
+    width: 23%;
+    left: 7%;
+    top: 7%;
+} 
+
+.galaxy:nth-child(5) {
+    background-color: purple;
+    height: 23%;
+    width: 23%;
+    left: 7%;
+    top: 7%;
+} 
+
+.galaxy:nth-child(6) {
+    background-color: purple;
+    height: 23%;
+    width: 23%;
+    left: 7%;
+    top: 7%;
+} 
+
+.galaxy:nth-child(7) {
+    background-color: purple;
+    height: 23%;
+    width: 23%;
+    left: 7%;
+    top: 7%;
+} 
+
+.galaxy:nth-child(8) {
+    background-color: purple;
+    height: 23%;
+    width: 23%;
+    left: 7%;
+    top: 7%;
+} 
+
+.galaxy:nth-child(9) {
+    background-color: purple;
+    height: 23%;
+    width: 23%;
+    left: 7%;
+    top: 7%;
+} 
+*/
 
 
 .SolarSystemContainer {
@@ -637,7 +749,8 @@ nav li:nth-child(11) {background: black;}
     width: 3000px;
     height: 3000px;
     position: absolute;
-    top: 0%; left: -15%;
+    top: 0%; 
+    left: 0%;
     transform-style: preserve-3d;
     transform: translate(-50%,-50%) translateZ(-2000px) rotateX(50deg);
     transition: 1s;
@@ -1056,6 +1169,7 @@ nav li:nth-child(11) {background: black;}
 @keyframes shadowRotation {
     to {transform: translate(0%,10%) rotate(360deg);}
 }
+
 @keyframes shadowScale {
     0% {transform:scaleY(1);}
     30% {transform:scaleY(3);}
@@ -1068,16 +1182,19 @@ nav li:nth-child(11) {background: black;}
         transform: translate(-50%,-50%) rotateY(+15deg) rotateZ(-360deg);
     }
 }
+
 @keyframes planetRotation {
     to {
         transform: translate(-50%,-50%) rotateZ(360deg) rotateX(-45deg);
     }
 }
+
 @keyframes sunRotation {
     to {
         transform: translate(-50%,-50%) rotateX(-45deg) rotateZ(-360deg);
     }
 }
+
 @keyframes glow {
     0% {
         box-shadow: 0px 0px 100px rgb(255, 161, 53);
@@ -1095,6 +1212,7 @@ nav li:nth-child(11) {background: black;}
         transform: translate(-50%,-50%) rotateX(70deg) rotateZ(-360deg);
     }
 }
+
 @keyframes moonRotation {
     to {
         transform: translate(-50%,-50%) rotateZ(360deg) rotateX(90deg);
@@ -1110,39 +1228,47 @@ nav li:nth-child(11) {background: black;}
     50% {transform:translate(0px,0px) scale(1);}
     100% {transform:translate(0px,-50px) scale(0.7);}
 }
+
 @keyframes stage1fadein1 {
     0%  {opacity: 0;}
     100% {opacity: 1; transform: translate(-50%,-20px);}
 }
+
 @keyframes stage1fadein2 {
     0%  {opacity: 0;}
     100% {opacity: 1; transform: translate(-50%,40px)}
 }
+
 @keyframes playbutton {
     0%  {opacity: 0;}
     20% {opacity: 1;}
     80% {opacity: 1;}
     100% {opacity: 0; width:200px}
 }
+
 @keyframes spin {
     to {
         transform: rotate(540deg);
     }
 }
+
 @keyframes ballgrow {
     to {
         transform: scale(2759%);
     }
 }
+
 @keyframes loadingfadeIn {
     0%  {opacity: 0;}
     100% {opacity: 1; visibility: visible;}
 }
+
 @keyframes welcomefadeOut {
     0%  {opacity: 1; visibility: visible;}
     50% {transform: translateZ(0px); opacity: 0;visibility: hidden;}
     100% {transform: translateZ(-100px); opacity: 0;visibility: hidden;}
 }
+
 @keyframes solarFadein {
     0%  {opacity: 0;}
     50%  {opacity: 0;}
