@@ -26,7 +26,7 @@
 
 ## <img src="https://cdn.discordapp.com/emojis/852881450667081728.gif" width="20px" height="20px"> 》Feature
 - [x] Mesmerizing animation of a galaxy made with HTML, CSS, and JavaScript.
-- [ ] Customizable animation speed and direction.
+- [x] Galaxy gallery.
 - [x] Multiple celestial objects, including planets, stars, and asteroids.
 - [x] Detailed information about each object in the galaxy, including size, distance, and composition.
 
@@ -34,7 +34,7 @@
 <br />
 <p align="center">
   <a href="https://github.com/PP-Namias/Galaxy-Animation">
-    <img src="#">
+    <img src="img/Galaxy Animation.jpeg">
   </a>
 </p>
 
