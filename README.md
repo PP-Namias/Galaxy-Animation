@@ -24,10 +24,21 @@
 ## <img src="https://cdn.discordapp.com/emojis/859424401186095114.png" width="20px" height="20px"> 》Description
 [![Readme Card](https://github-readme-stats.vercel.app/api/pin/?username=PP-Namias&repo=Galaxy-Animation&theme=tokyonight&show_owner=true&hide_border=true)](https://github.com/PP-Namias/Galaxy-Animation)
 
+## <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/09/YouTube_full-color_icon_%282017%29.svg/800px-YouTube_full-color_icon_%282017%29.svg.png" width="30px" height="20px"> 》Youtube Dev log Playlist
+<p align="center"> 
+<a aria-label="CSS3 Web Art Act 3 & 4 Timelapse" href="https://www.youtube.com/watch?v=VnZbq8MaM0g" target="_blank"><img alt="CSS3 Web Art Act 3 & 4 Timelapse" src="./images/CSS3 Web Art Act 3 & 4 Timelapse.png" width="650px"></a>
+<a aria-label="Youtube Devlog Part 1" href="https://www.youtube.com/watch?v=ms60grFU40E" target="_blank"><img alt="Youtube Devlog Part 1" src="./img/Youtube Devlog Part 1.png" width="650px"></a>
+<a aria-label="Youtube Devlog Part 2" href="https://www.youtube.com/watch?v=Us9bKnnCv3U" target="_blank"><img alt="Youtube Devlog Part 2" src="./img/Youtube Devlog Part 2.png" width="650px"></a>
+<a aria-label="Youtube Devlog Part 3" href="https://www.youtube.com/watch?v=k6YNyVXGTco" target="_blank"><img alt="Youtube Devlog Part 3" src="./img/Youtube Devlog Part 3.png" width="650px"></a>
+<a aria-label="Youtube Devlog Part 4" href="https://www.youtube.com/watch?v=XVxHFyuglmk" target="_blank"><img alt="Youtube Devlog Part 4" src="./img/Youtube Devlog Part 4.png" width="650px"></a>
+<a aria-label="Youtube Devlog Part 5" href="https://www.youtube.com/watch?v=dwTO0Nj7Rs8" target="_blank"><img alt="Youtube Devlog Part 5" src="./img/Youtube Devlog Part 5.png" width="650px"></a>
+</p>
+
 ## <img src="https://cdn.discordapp.com/emojis/852881450667081728.gif" width="20px" height="20px"> 》Feature
 - [x] Mesmerizing animation of a galaxy made with HTML, CSS, and JavaScript.
 - [x] Galaxy gallery.
 - [x] Multiple celestial objects, including planets, stars, and asteroids.
+- [x] Complete rendered solar system using only HTML, CSS, and JavaScript.
 - [x] Detailed information about each object in the galaxy, including size, distance, and composition.
 
 ## <img src="https://cdn.discordapp.com/emojis/1028680849195020308.png" width="25px" height="25px"> 》Screenshots
