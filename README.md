@@ -26,7 +26,7 @@
 
 ## <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/09/YouTube_full-color_icon_%282017%29.svg/800px-YouTube_full-color_icon_%282017%29.svg.png" width="30px" height="20px"> 》Youtube Dev log Playlist
 <p align="center"> 
-<a aria-label="Galaxy Animation Timelapse" href="https://www.youtube.com/watch?v=VnZbq8MaM0g" target="_blank"><img alt="Galaxy Animation Timelapse" src="./images/Galaxy Animation Timelapse.png" width="650px"></a>
+<a aria-label="Galaxy Animation Timelapse" href="https://youtu.be/54Ifcl-qKQM" target="_blank"><img alt="Galaxy Animation Timelapse" src="./img/Galaxy Animation.png" width="650px"></a>
 <a aria-label="Youtube Devlog Part 1" href="https://www.youtube.com/watch?v=ms60grFU40E" target="_blank"><img alt="Youtube Devlog Part 1" src="./img/Youtube Devlog Part 1.png" width="650px"></a>
 <a aria-label="Youtube Devlog Part 2" href="https://www.youtube.com/watch?v=Us9bKnnCv3U" target="_blank"><img alt="Youtube Devlog Part 2" src="./img/Youtube Devlog Part 2.png" width="650px"></a>
 <a aria-label="Youtube Devlog Part 3" href="https://www.youtube.com/watch?v=k6YNyVXGTco" target="_blank"><img alt="Youtube Devlog Part 3" src="./img/Youtube Devlog Part 3.png" width="650px"></a>
