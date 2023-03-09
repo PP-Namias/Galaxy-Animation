@@ -123,7 +123,8 @@ a {
   /* responsive design */
 }
 .header .hero-section .hero-container h1 .name {
-  position: relative;
+  position: absolute;
+  margin: -95px 0 0 150px;
 }
 .header .hero-section .hero-container h1 .name::before {
   content: "";
@@ -135,6 +136,112 @@ a {
   left: 0;
   bottom: 0;
 }
+
+@keyframes float {
+  from, to {
+    transform: translateY(-0%);
+  }
+  
+  50% {    
+    transform: translateY(-3%);
+  }
+}
+
+@keyframes background-pan {
+  from {
+    background-position: 1000% center;
+  }
+  
+  to {
+    background-position: 0% center;
+  }
+}
+
+.header .hero-section .hero-container h1 a {
+  display: flex;
+}
+.name {
+  margin: 0rem;
+  transition: opacity 250ms ease;
+}
+
+a {
+  text-decoration: none;
+}
+
+.header .hero-section .hero-container h1:has(.fancy:hover) .word:not(.fancy:hover) {
+  opacity: 0.2;
+}
+
+.fancy span {
+  display: inline-block;
+}
+
+.fancy > .outer {
+  transition: transform 350ms ease;
+}
+
+.fancy:hover > .outer {
+  transition-duration: 800ms;
+}
+
+.fancy:hover > .outer > .inner {
+  animation: float 5s ease infinite;
+}
+
+.fancy:hover > .outer > .inner > .letter {
+  background: linear-gradient(
+    to right,
+    rgb(84, 72, 250) 0%,
+    rgb(199, 72, 250) 0%,
+    rgb(84, 72, 250) 0%
+  );
+  background-size: 1000%;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: background-pan 150s linear infinite;
+}
+
+.fancy:hover > .outer:nth-child(1) {
+  transform: translate(-80%, 60%) rotate(8deg);
+}
+
+.fancy:hover > .outer:nth-child(2) {
+  transform: translate(-40%, 20%) rotate(4deg);
+}
+
+.fancy:hover > .outer:nth-child(3) {
+  transform: translate(-10%, 60%) rotate(-6deg);
+}
+
+.fancy:hover > .outer:nth-child(4) {
+  transform: translate(0%, 8%) rotate(-8deg);
+}
+
+.fancy:hover > .outer:nth-child(5) {
+  transform: translate(0%, -20%) rotate(5deg);
+}
+
+.fancy:hover > .outer:nth-child(6) {
+  transform: translate(0%, 20%) rotate(-3deg);
+}
+
+.fancy:hover > .outer:nth-child(7) {
+  transform: translate(0%, -40%) rotate(-5deg);
+}
+
+.fancy:hover > .outer:nth-child(8) {
+  transform: translate(0%, 15%) rotate(10deg);
+}
+
+.fancy:hover > .outer:nth-child(9) {
+  transform: translate(0%, -50%) rotate(8deg);
+}
+
+.fancy:hover > .outer:nth-child(10) {
+  transform: translate(0%, 15%) rotate(-6deg);
+}
+
 @media screen and (min-width: 600px) {
   .header .hero-section .hero-container h1 {
     font-size: clamp(3.4375rem, 1.8685rem + 3.93vw, 4.8125rem);
@@ -156,18 +263,18 @@ a {
     margin-bottom: 40px;
   }
 }
-.header .hero-section .hero-container .download-btn {
+.header .hero-section .hero-container .website {
   color: var(--text-color);
   font-size: clamp(1rem, 0.873rem + 0.6309vw, 1.125rem);
   letter-spacing: 1.5px;
   font-weight: var(--font-bold);
   position: relative;
 }
-.header .hero-section .hero-container .download-btn:hover::before {
+.header .hero-section .hero-container .website:hover::before {
   background-color: var(--hover-color);
   transition: all ease-in-out 0.3s;
 }
-.header .hero-section .hero-container .download-btn::before {
+.header .hero-section .hero-container .website::before {
   content: "";
   background-color: var(--underline-color);
   transition: all ease-in-out 0.3s;
@@ -741,7 +848,7 @@ nav li:nth-child(11) {background: black;}
   height: 3000px;
   position: absolute;
   top: 0%; 
-  left: 0%;
+  left: 15%;
   transform-style: preserve-3d;
   transform: translate(-50%,-50%) translateZ(-2000px) rotateX(50deg);
   transition: 1s;
