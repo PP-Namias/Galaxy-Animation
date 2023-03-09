@@ -535,7 +535,7 @@ main {
 
 #fullscreen:checked~main .afterLoad {
   right: -100%;
-}#fullscreen:checked~main .SS {
+}#fullscreen:checked~main .SolarSystem {
   top: 10%; 
   left: 55%;
   transform: translate(-50%,-50%) translateZ(-1500px) rotateX(60deg);
@@ -843,7 +843,7 @@ nav li:nth-child(11) {background: black;}
   visibility: hidden;
 }
 
-.SS {
+.SolarSystem {
   width: 3000px;
   height: 3000px;
   position: absolute;
