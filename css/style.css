@@ -411,7 +411,7 @@ a {
 }
 
 /* Solar System section */
-.solar-system-sontainer {
+.solar-system-container {
   background-image: url(../img/bg.jpg);
   background-size: cover;
   transform-style: flat;
