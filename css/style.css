@@ -296,6 +296,9 @@ a {
 }
 
 #galaxy {
+  background-image: url(../img/galaxy-bg.jpg);
+  background-size: cover;
+  transform-style: flat;
   height: 140vmax;
   width: 140vmax;  
   position: absolute;
